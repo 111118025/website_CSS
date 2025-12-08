@@ -4,160 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黃兆妤's Blog</title>
-    <!-- 引入 Bootstrap 的 CSS -->
+    <title>黃兆妤's Portfolio</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- 頁頭區 -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">黃兆妤 的個人部落格</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#section1">關於我</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section2">工作經歷</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section3">工作技能</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section4">音樂作品</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section5">視訊作品</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section6">圖片作品</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section7">更多資訊</a></li>
-                    </ul>
-                </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">黃兆妤</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">專案/作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#other">其他</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+                </ul>
             </div>
-        </nav>
-        <button id="theme-toggle" class="btn btn-light">切換暗/亮主題</button>
-    </header>
+        </div>
+    </nav>
 
-    <!-- 主內容區 -->
-    <main class="container">
-        <div class="row">
-            <!-- 側邊欄 -->
-            <aside class="col-lg-3 col-md-4 col-sm-12">
-                <h3>聯絡資訊</h3>
-                <p>0912345678</p>
-            </aside>
+    <!-- 切換暗/亮主題按鈕 -->
+    <button id="theme-toggle" class="btn btn-light">切換暗/亮主題</button>
 
-            <!-- 文章區域 -->
-            <article class="col-lg-9 col-md-8 col-sm-12">
+    <!-- 主內容 -->
+    <main class="container mt-5 pt-5">
 
-                <!-- 關於我 -->
-                <section id="section1">
-                    <h2>關於我</h2>
-                    <table>
-                        <tr>
-                            <td><img src="DSCF1033.JPG" alt="JOY's picture" class="img-fluid" width="300"></td>
-                            <td>
-                                <h3>JOY</h3>
-                                <p><a href="https://www.ntue.edu.tw/">國立台北教育大學</a> 文創四甲學生</p>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>我是一位大學生，專注學習 <mark>平面設計</mark> 和 <mark>平面繪圖</mark>，並致力於
-                        <mark>深度學習</mark> 與 <mark>生成式 AI</mark> 在教育及工程應用上的創新研究與應用。</p>
-                    <p>此外，我也熱愛旅遊、音樂與閱讀，希望將藝術與科技結合，為教學與研究注入更多元的靈感與視野。</p>
-                </section>
+        <!-- 首頁 -->
+        <section id="home" class="mb-5">
+            <h1>歡迎來到黃兆妤的個人網站</h1>
+            <p>專注於平面設計、生成式 AI 與多媒體創作。</p>
+        </section>
 
-                <!-- 求學經歷 -->
-                <section id="section2">
-                    <h2>求學經歷</h2>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Dates</th>
-                                <th>Schools</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2022-2025</td>
-                                <td>國立台北教育大學文化創意產業經營學系</td>
-                            </tr>
-                            <tr>
-                                <td>2018-2021</td>
-                                <td>高雄高工 圖文傳播學系</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
+        <!-- 關於我 -->
+        <section id="about" class="mb-5">
+            <h2>關於我</h2>
+            <table>
+                <tr>
+                    <td><img src="DSCF1033.JPG" alt="JOY's picture" class="img-fluid" width="300"></td>
+                    <td>
+                        <h3>JOY</h3>
+                        <p>國立台北教育大學 文創四甲學生</p>
+                        <p>熱愛設計、音樂與科技，致力於將藝術與創新結合。</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-                <!-- 技能 -->
-                <section id="section3">
-                    <h2>工作技能</h2>
-                    <table class="table table-bordered">
-                        <tr>
-                            <td>ADOBE ID</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>ADOBE PS</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>ADOBE AI</td>
-                            <td>⭐⭐⭐⭐⭐</td>
-                        </tr>
-                    </table>
-                </section>
-
-                <!-- 音訊介紹 -->
-                <section id="section4">
-                    <h2>音訊介紹</h2>
-                    <audio controls>
-                        <source src="assets/audio/Whispers in the Trees 1.mp3" type="audio/mpeg">
-                    </audio>
-                </section>
-
-                <!-- 視訊介紹 -->
-                <section id="section5">
-                    <h2>視訊介紹</h2>
-                    <video controls width="300">
-                        <source src="assets/video/Whispers in the Trees 1.mp4" type="video/mp4">
-                    </video>
-                    <video controls width="300">
-                        <source src="assets/video/Rise Up and Shine.mp4" type="video/mp4">
-                    </video>
-                </section>
-
-                <!-- 作品集 -->
-                <section id="section6">
-                    <h2>作品集</h2>
-
+        <!-- 專案/作品集 -->
+        <section id="portfolio" class="mb-5">
+            <h2>專案/作品集</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
                     <figure class="figure">
-                        <img src="assets/images/jiaodao.jpg" alt="礁島想像" class="figure-img img-fluid rounded" width="450">
+                        <img src="assets/images/jiaodao.jpg" class="figure-img img-fluid rounded" alt="礁島想像">
                         <figcaption class="figure-caption">礁島想像</figcaption>
                     </figure>
-
+                </div>
+                <div class="col-md-6 mb-3">
                     <figure class="figure">
-                        <img src="assets/images/songyan-poster.jpg" alt="松菸時裝電影工廠海報" class="figure-img img-fluid rounded" width="450">
+                        <img src="assets/images/songyan-poster.jpg" class="figure-img img-fluid rounded" alt="松菸海報">
                         <figcaption class="figure-caption">松菸時裝電影工廠海報</figcaption>
                     </figure>
+                </div>
+            </div>
+        </section>
 
-                </section>
+        <!-- 其他 -->
+        <section id="other" class="mb-5">
+            <h2>其他作品或資訊</h2>
+            <p>這裡可以放置音樂、視訊或 PDF 等其他作品：</p>
+            <audio controls>
+                <source src="assets/audio/Whispers in the Trees 1.mp3" type="audio/mpeg">
+            </audio>
+            <video controls width="300">
+                <source src="assets/video/Whispers in the Trees 1.mp4" type="video/mp4">
+            </video>
+            <embed src="assets/pdf/llm models.pdf" width="500" height="600">
+        </section>
 
-                <!-- PDF -->
-                <section id="section7">
-                    <h2>更多資訊</h2>
-                    <embed src="assets/pdf/llm models.pdf" width="500" height="600">
-                </section>
+        <!-- 聯絡我 -->
+        <section id="contact" class="mb-5">
+            <h2>聯絡我</h2>
+            <p>Email: 111118025@personalblog.com</p>
+            <p>Phone: 0912345678</p>
+        </section>
 
-            </article>
-        </div>
     </main>
 
-    <footer>
-        <p>聯絡我們：111118025@personalblog.com</p>
-        <time datetime="2024-11-17">最後更新日期：2025年12月07日</time>
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2025 黃兆妤</p>
     </footer>
 
-    <!-- 暗主題切換 -->
+    <!-- 暗/亮主題切換 -->
     <script>
         const toggleBtn = document.getElementById('theme-toggle');
         if (localStorage.getItem('theme') === 'dark') {
@@ -165,11 +113,7 @@
         }
         toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            if (document.body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.setItem('theme', 'light');
-            }
+            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
         });
     </script>
 
