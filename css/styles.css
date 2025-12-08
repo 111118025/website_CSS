@@ -1,113 +1,46 @@
+/* 基本樣式 */
 body {
-    font-family: "微軟正黑體", sans-serif;
-    line-height:1.6;
-    margin:0;
-    padding:0;
-    background:#f8f9fa;
-    color:#333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background:#4f91ff;
-    color:white;
-    padding:20px 0;
-    text-align:center;
-    box-shadow:0 3px 12px rgba(0,0,0,0.2);
+/* 頁尾樣式 */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header nav a {
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
-    border-bottom:2px solid transparent;
-}
-
-header nav a:hover {
-    border-bottom:2px solid #fff;
-}
-
-main {
-    max-width:1200px;
-    margin:20px auto;
-    padding:20px;
-}
-
-article {
-    margin-bottom:40px;
-    padding:20px;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.1);
-}
-
-table {
-    border-collapse:collapse;
-    width:100%;
-}
-
-table th,
-table td {
-    border:1px solid #ddd;
-    padding:10px;
-    text-align:left;
-}
-
-table th {
-    background:#4f91ff;
-    color:white;
-}
-
-table tr:hover {
-    background:#f1f1f1;
-}
-
-figure {
-    margin:10px;
-    text-align:center;
-}
-
-figcaption {
-    margin-top:5px;
-    font-style:italic;
-    color:#555;
-}
-
-/* 暗主題 */
+/* 暗/亮主題 */
 body.dark-mode {
-    background:#121212;
-    color:#f0f0f0;
+    background-color: #121212;
+    color: white;
 }
 
-body.dark-mode header,
-body.dark-mode aside,
-body.dark-mode article,
-body.dark-mode details,
+body.dark-mode header {
+    background-color: #333;
+}
+
+body.dark-mode .navbar {
+    background-color: #444;
+}
+
+body.dark-mode .navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
 body.dark-mode footer {
-    background:#1e1e1e;
-    color:#f0f0f0;
-    box-shadow:0 3px 12px rgba(255,255,255,0.05);
+    background-color: #333;
 }
 
-body.dark-mode nav a {
-    color:#bbbbbb;
+/* 自訂一些按鈕樣式 */
+button {
+    margin-top: 20px;
 }
 
-body.dark-mode nav a:hover {
-    color:#4f91ff;
-    border-bottom-color:#4f91ff;
-}
-
-body.dark-mode table th {
-    background:#4f91ff;
-    color:white;
-}
-
-body.dark-mode table tr:hover {
-    background:#2a2a2a;
-}
-
-body.dark-mode mark {
-    background:#4f91ff;
-    color:#fff;
-}
+/* 音訊、視訊、圖片樣式 */
+img.img-fluid, video, audio {
+    max-width:
