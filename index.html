@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>黃兆妤's Blog</title>
-    <!-- 修正 CSS 路徑 -->
     <link rel="stylesheet" href="/website_HTML/css/styles.css">
 </head>
 <body>
@@ -23,7 +22,8 @@
         <!-- 暗主題切換按鈕 -->
         <button id="theme-toggle">切換暗/亮主題</button>
     </header>
-    
+
+    <!-- 主內容區 -->
     <main>
         <aside>
             <h3>聯絡資訊</h3>
@@ -120,11 +120,22 @@
         <time datetime="2024-11-17">最後更新日期：2025年12月07日</time>
     </footer>
 
-    <!-- 暗主題切換 JS -->
+    <!-- 暗主題切換 & 自動記住功能 -->
     <script>
     const toggleBtn = document.getElementById('theme-toggle');
+
+    // 自動套用上次選擇
+    if(localStorage.getItem('theme') === 'dark'){
+        document.body.classList.add('dark-mode');
+    }
+
     toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
+        if(document.body.classList.contains('dark-mode')){
+            localStorage.setItem('theme','dark');
+        } else {
+            localStorage.setItem('theme','light');
+        }
     });
     </script>
 </body>
