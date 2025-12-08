@@ -1,0 +1,63 @@
+# 1. 進入專案資料夾（或先 clone）
+# 若還沒 clone，請先：
+git clone https://github.com/111118025/你的-repo-name.git
+cd 你的-repo-name
+
+# 2. 建立 css 資料夾並新增 styles.css
+mkdir -p css
+cat > css/styles.css <<'CSS'
+/* styles.css — 範例 */
+:root{
+  --bg:#ffffff;
+  --fg:#222;
+  --accent:#d9534f;
+  --muted:#666;
+  --container-max:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Noto Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--fg);
+  background:var(--bg);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:var(--container-max);
+  margin:0 auto;
+  padding:24px;
+}
+header.site-header{
+  padding:20px 0;
+  border-bottom:1px solid #eee;
+}
+h1{font-size:clamp(1.4rem, 2.6vw, 2rem); margin:0 0 8px}
+a{color:var(--accent); text-decoration:none}
+button, .btn{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.06);
+  background:linear-gradient(180deg, #fff, #f7f7f7);
+  cursor:pointer;
+}
+.card{
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:12px;
+  padding:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.03);
+  margin:12px 0;
+}
+.footer{font-size:0.9rem; color:var(--muted); padding:20px 0}
+@media (max-width:720px){
+  .container{padding:16px}
+  .card{padding:12px}
+}
+CSS
+
+# 3. 把檔案加入版本控制、提交、推上 GitHub
+git add css/styles.css
+git commit -m "Add basic styles.css"
+git push origin main   # 若分支不是 main，改成你的分支名稱
