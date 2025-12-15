@@ -2,145 +2,197 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>黃兆妤's Blog</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- YouTube RWD -->
+    <!-- YouTube RWD 與遊戲容器 CSS -->
     <style>
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            padding-top: 56.25%;
-            margin: 20px auto;
-        }
+      .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        padding-top: 56.25%;
+        margin: 20px auto;
+      }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-        }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+
+      .game-container {
+        position: relative;
+        width: 100%;
+        max-width: 640px;
+        padding-top: 56.25%; /* 16:9 */
+        margin: 20px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .game-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+      }
     </style>
 </head>
 
 <body>
-    <!-- 頁頭區 -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">黃兆妤 的個人部落格</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="#home">首頁</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">專案/作品集</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#other">其他</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <button id="theme-toggle" class="btn btn-light">切換暗/亮主題</button>
-    </header>
+  <!-- 頁頭區 -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">黃兆妤 的個人部落格</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home"
+              >首頁</a
+            ></li>
+            <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">專案/作品集</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#other">其他</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button id="theme-toggle" class="btn btn-light">切換暗/亮主題</button>
+  </header>
 
-    <!-- 主內容 -->
-    <main class="container my-4">
+  <!-- 主內容 -->
+  <main class="container my-4">
+    <section id="home">
+      <h1>歡迎來到黃兆妤的個人網站</h1>
+      <p>這裡展示我的學期作品與個人作品集。</p>
+    </section>
 
-        <section id="home">
-            <h1>歡迎來到黃兆妤的個人網站</h1>
-            <p>這裡展示我的學期作品與個人作品集。</p>
-        </section>
+    <section id="about" class="my-4">
+      <h2>關於我</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="DSCF1033.JPG"
+            alt="JOY's picture"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-8">
+          <h3>JOY</h3>
+          <p><a href="https://www.ntue.edu.tw/">國立台北教育大學</a> 文創四甲學生</p>
+          <p>
+            我是一位大學生，專注學習 <mark>平面設計</mark> 和
+            <mark>平面繪圖</mark>。
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section id="about" class="my-4">
-            <h2>關於我</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="DSCF1033.JPG" alt="JOY's picture" class="img-fluid rounded">
-                </div>
-                <div class="col-md-8">
-                    <h3>JOY</h3>
-                    <p><a href="https://www.ntue.edu.tw/">國立台北教育大學</a> 文創四甲學生</p>
-                    <p>我是一位大學生，專注學習 <mark>平面設計</mark> 和 <mark>平面繪圖</mark>。</p>
-                </div>
-            </div>
-        </section>
+    <section id="portfolio" class="my-4">
+      <h2>專案/作品集</h2>
+      <figure class="figure">
+        <img
+          src="assets/images/jiaodao.jpg"
+          class="figure-img img-fluid rounded"
+        />
+        <figcaption class="figure-caption">礁島想像</figcaption>
+      </figure>
+      <figure class="figure">
+        <img
+          src="assets/images/songyan-poster.jpg"
+          class="figure-img img-fluid rounded"
+        />
+        <figcaption class="figure-caption">松菸時裝電影工廠海報</figcaption>
+      </figure>
+    </section>
 
-        <section id="portfolio" class="my-4">
-            <h2>專案/作品集</h2>
-            <figure class="figure">
-                <img src="assets/images/jiaodao.jpg" class="figure-img img-fluid rounded">
-                <figcaption class="figure-caption">礁島想像</figcaption>
-            </figure>
-            <figure class="figure">
-                <img src="assets/images/songyan-poster.jpg" class="figure-img img-fluid rounded">
-                <figcaption class="figure-caption">松菸時裝電影工廠海報</figcaption>
-            </figure>
-        </section>
+    <section id="other" class="my-4">
+      <h2>其他</h2>
 
-        <section id="other" class="my-4">
-            <h2>其他</h2>
+      <h4>音訊介紹</h4>
+      <audio controls>
+        <source src="assets/images/audio/music.m4a" type="audio/mpeg" />
+      </audio>
 
-            <h4>音訊介紹</h4>
-            <audio controls>
-                <source src="assets/images/audio/music.m4a" type="audio/mpeg">
-            </audio>
+      <h4 class="mt-4">視訊作品（本地）</h4>
+      <video controls width="300">
+        <source src="assets/video/Whispers in the Trees 1.mp4" type="video/mp4" />
+      </video>
+      <video controls width="300">
+        <source src="assets/video/Rise Up and Shine.mp4" type="video/mp4" />
+      </video>
 
-            <h4 class="mt-4">視訊作品（本地）</h4>
-            <video controls width="300">
-                <source src="assets/video/Whispers in the Trees 1.mp4" type="video/mp4">
-            </video>
-            <video controls width="300">
-                <source src="assets/video/Rise Up and Shine.mp4" type="video/mp4">
-            </video>
+      <!-- ✅ YouTube 嵌入 -->
+      <h4 class="mt-4">視訊作品（YouTube）</h4>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/we3VSvHTGII"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
-            <!-- ✅ YouTube 嵌入 -->
-            <h4 class="mt-4">視訊作品（YouTube）</h4>
-            <div class="video-container">
-                <iframe
-                    src="https://www.youtube.com/embed/we3VSvHTGII"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
+      <h4 class="mt-4">Gemini 小遊戲</h4>
+      <div class="game-container">
+        <iframe
+          src="https://gemini.google.com/share/60b15ab9d0ed"
+          allowfullscreen
+          scrolling="no"
+        ></iframe>
+      </div>
 
-            <h4 class="mt-4">PDF 資料</h4>
-            <iframe src="assets/images/chinese.pdf" width="100%" height="600px"></iframe>
-        </section>
+      <h4 class="mt-4">PDF 資料</h4>
+      <iframe src="assets/images/chinese.pdf" width="100%" height="600px"></iframe>
+    </section>
 
-        <section id="contact" class="my-4">
-            <h2>聯絡我</h2>
-            <p>Email: 111118025@personalblog.com</p>
-            <p>電話: 0912345678</p>
-        </section>
+    <section id="contact" class="my-4">
+      <h2>聯絡我</h2>
+      <p>Email: 111118025@personalblog.com</p>
+      <p>電話: 0912345678</p>
+    </section>
+  </main>
 
-    </main>
+  <footer class="text-center py-3 bg-light">
+    <p>聯絡我們：111118025@personalblog.com</p>
+    <time datetime="2025-12-07">最後更新日期：2025年12月07日</time>
+  </footer>
 
-    <footer class="text-center py-3 bg-light">
-        <p>聯絡我們：111118025@personalblog.com</p>
-        <time datetime="2025-12-07">最後更新日期：2025年12月07日</time>
-    </footer>
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
 
-    <script>
-        const toggleBtn = document.getElementById('theme-toggle');
-        toggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
