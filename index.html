@@ -2,57 +2,36 @@
 <html lang="zh-TW">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>黃兆妤's Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>黃兆妤's Blog</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- YouTube RWD 與遊戲容器 CSS -->
-    <style>
-      .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        padding-top: 56.25%;
-        margin: 20px auto;
-      }
+  <!-- YouTube RWD CSS -->
+  <style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      padding-top: 56.25%;
+      margin: 20px auto;
+    }
 
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-      }
-
-      .game-container {
-        position: relative;
-        width: 100%;
-        max-width: 640px;
-        padding-top: 56.25%; /* 16:9 */
-        margin: 20px auto;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .game-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        display: block;
-      }
-    </style>
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
@@ -71,13 +50,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link active" href="#home"
-              >首頁</a
-            ></li>
+            <li class="nav-item"><a class="nav-link active" href="#home">首頁</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">專案/作品集</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">專案/作品集</a></li>
             <li class="nav-item"><a class="nav-link" href="#other">其他</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
           </ul>
@@ -98,18 +73,13 @@
       <h2>關於我</h2>
       <div class="row">
         <div class="col-md-4">
-          <img
-            src="DSCF1033.JPG"
-            alt="JOY's picture"
-            class="img-fluid rounded"
-          />
+          <img src="DSCF1033.JPG" alt="JOY's picture" class="img-fluid rounded" />
         </div>
         <div class="col-md-8">
           <h3>JOY</h3>
           <p><a href="https://www.ntue.edu.tw/">國立台北教育大學</a> 文創四甲學生</p>
           <p>
-            我是一位大學生，專注學習 <mark>平面設計</mark> 和
-            <mark>平面繪圖</mark>。
+            我是一位大學生，專注學習 <mark>平面設計</mark> 和 <mark>平面繪圖</mark>。
           </p>
         </div>
       </div>
@@ -118,17 +88,11 @@
     <section id="portfolio" class="my-4">
       <h2>專案/作品集</h2>
       <figure class="figure">
-        <img
-          src="assets/images/jiaodao.jpg"
-          class="figure-img img-fluid rounded"
-        />
+        <img src="assets/images/jiaodao.jpg" class="figure-img img-fluid rounded" />
         <figcaption class="figure-caption">礁島想像</figcaption>
       </figure>
       <figure class="figure">
-        <img
-          src="assets/images/songyan-poster.jpg"
-          class="figure-img img-fluid rounded"
-        />
+        <img src="assets/images/songyan-poster.jpg" class="figure-img img-fluid rounded" />
         <figcaption class="figure-caption">松菸時裝電影工廠海報</figcaption>
       </figure>
     </section>
@@ -149,7 +113,7 @@
         <source src="assets/video/Rise Up and Shine.mp4" type="video/mp4" />
       </video>
 
-      <!-- ✅ YouTube 嵌入 -->
+      <!-- YouTube 嵌入 -->
       <h4 class="mt-4">視訊作品（YouTube）</h4>
       <div class="video-container">
         <iframe
@@ -160,14 +124,17 @@
         ></iframe>
       </div>
 
+      <!-- Gemini 小遊戲改成按鈕跳轉 -->
       <h4 class="mt-4">Gemini 小遊戲</h4>
-      <div class="game-container">
-        <iframe
-          src="https://gemini.google.com/share/60b15ab9d0ed"
-          allowfullscreen
-          scrolling="no"
-        ></iframe>
-      </div>
+      <p>因 Gemini 網站限制無法直接嵌入，請點擊下方按鈕前往遊戲：</p>
+      <a
+        href="https://gemini.google.com/share/60b15ab9d0ed"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        前往 Gemini 小遊戲
+      </a>
 
       <h4 class="mt-4">PDF 資料</h4>
       <iframe src="assets/images/chinese.pdf" width="100%" height="600px"></iframe>
